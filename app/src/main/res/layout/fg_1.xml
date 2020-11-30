@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/advpager"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            />
+        <LinearLayout
+            android:id="@+id/ll_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_a"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/dog"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="按钮a" />
+
+            <Button
+                android:id="@+id/btn_b"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/tiger"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="按钮b" />
+
+            <Button
+                android:id="@+id/btn_c"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/changjinglu"
+
+                style="?android:attr/borderlessButtonStyle"
+                android:text="按钮c" />
+
+            <Button
+                android:id="@+id/btn_d"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/songshu"
+
+                style="?android:attr/borderlessButtonStyle"
+                android:text="按钮d" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_e"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/horse"
+
+                style="?android:attr/borderlessButtonStyle"
+                android:text="按钮e" />
+            <Button
+                android:id="@+id/btn_f"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/lion"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="按钮f" />
+            <Button
+                android:id="@+id/btn_g"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/panda"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="按钮g" />
+
+            <CheckBox
+                android:id="@+id/btn_h"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/more"
+                android:button="@null"
+                android:gravity="center"
+                android:text="更多" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <Button
+                android:id="@+id/btn_text"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/text"
+                android:text="西科小说" />
+            <Button
+                android:id="@+id/btn_movie"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/movie"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="西科电影" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
