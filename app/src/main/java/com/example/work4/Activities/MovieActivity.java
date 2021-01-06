@@ -23,15 +23,16 @@ import okhttp3.Response;
 public class MovieActivity extends AppCompatActivity {
  private List<Movie> movieList=new ArrayList<>();
  ImageView imageView;
+    MovieAdapter adapter;
  ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie);
         listView=findViewById(R.id.movie_list);
-        MovieAdapter adapter=new MovieAdapter(MovieActivity.this,R.layout.movie_item,movieList);
-        sendRequest();
+         adapter=new MovieAdapter(MovieActivity.this,R.layout.movie_item,movieList);
         listView.setAdapter(adapter);
+        sendRequest();
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -79,6 +80,12 @@ public class MovieActivity extends AppCompatActivity {
                     movieList.add(movie1);
                     movieList.add(movie2);
                 }
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        adapter.notifyDataSetChanged();
+                    }
+                });
             }
         });
     }
